@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Web</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Pasta CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="container-da-esquerda">
+            <div id="logo">
+                <img src="/img/saasweeklogo.png" alt="logo do site">
+                <h1>Desenvolvimento Front-End</h1>
+            </div>
+            <p id="exclusivo">Web Development</p>
+            <h2>Aprenda a criar um site com HTML & CSS</h2>
+            <p id="data">18/10/2022 | 14:00 | 100% Gratuito</p>
+            <p id="descricao">Neste evento você aprenderá a criar um site. E também como comercializar o produto que você desenvolveu.</p>
+            <h4>Palestrantes</h4>
+            <div id="imagens-palestrantes">
+                <div class="card-dos-palestrantes">
+                    <img src="/img/user_1.jpg" alt="primeiro palestrante">
+                    <p class="nome-palestrante">Paul Smith</p>
+                    <p class="profissao-palestrante">Gerente de Marketing</p>
+                </div>
+                <div class="card-dos-palestrantes">
+                    <img src="/img/user_2.jpg" alt="segundo palestrante">
+                    <p class="nome-palestrante">Jone Doe</p>
+                    <p class="profissao-palestrante">Tech Lead</p>
+                </div>
+                <div class="card-dos-palestrantes">
+                    <img src="/img/user_3.jpg" alt="terceiro palestrante">
+                    <p class="nome-palestrante">Messias Assis</p>
+                    <p class="profissao-palestrante">Empreendedor</p>
+                </div>
+            </div>
+        </div>
+        <div id="container-da-direita">
+            <div id="interior-do-formulario">
+                <h3>Inscreva-se</h3>
+                <p>Não perca a oportunidade de aprender com especialistas e tirar suas dúvidas</p>
+                <form id="formulario-de-registro">
+                    <div id="nome-do-container">
+                        <input type="text" name= "name" id= "nome" placeholder="Nome" required/>
+                        <input type="text" name="lastname" id="sobrenome" placeholder="Sobrenome" required/>
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <input type="submit" value="Fazer Cadastro" id="botao-de-cadastro"/>
+                </form>
+                <div id="beneficios">
+                    <h4>O que você vai aprender:</h4>
+                    <ul>
+                        <li>Conceitos básicos de HTML</li>
+                        <li>Conceitos básicos de CSS</li>
+                        <li>Desenvolver um projeto do zero</li>
+                        <li>Como tornar o site responsivo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
