@@ -1,0 +1,251 @@
+
+* {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+}
+
+#container-da-esquerda{
+    flex: 1;
+    padding: 2rem 4rem;
+    margin-left: 2vw;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#logo img{
+    height: 90px;
+    margin-right: 0.7rem;
+}
+
+#exclusivo{
+    text-transform: uppercase;
+    color: #0075ff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#container-da-esquerda h2{
+    font-size: 2.4rem;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+#data{
+    text-transform: uppercase;
+    color: #0075ff;
+    margin-bottom: 1rem;
+}
+
+#descricao{
+    max-width: 500px;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+#container-da-esquerda h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#imagens-palestrantes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-dos-palestrantes{
+    border: 2px solid #ccc;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+}
+
+.card-dos-palestrantes img{
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.card-dos-palestrantes .nome-palestrante{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+
+}
+
+.card-dos-palestrantes .profissao-palestrante{
+    color: #0075ff;
+    font-size: 0.9rem;
+}
+
+#container-da-direita{
+    padding: 2rem 4rem;
+    flex: 1;
+    flex-wrap: wrap;
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    color: #fff;
+}
+
+#interior-do-formulario{
+    margin: 2rem;
+    padding: 4rem;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#interior-do-formulario h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#interior-do-formulario p{
+    margin-bottom: 1rem;
+}
+
+
+#formulario-de-registro{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+#nome-do-container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#formulario-de-registro input{
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#email{
+    min-width: 100%;
+}
+
+#formulario-de-registro #botao-de-cadastro{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#formulario-de-registro #botao-de-cadastro:hover{
+    background-color: #fff;
+    color: #0075ff;
+}
+
+#beneficios{
+    text-align: left;
+    align-self: start;
+}
+
+#beneficios h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#beneficios ul{
+    list-style-position: inside;
+}
+
+#benedicios li{
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade - Mobile */
+@media (max-width: 450px) {
+    body{
+        flex-direction: column;
+        padding-top: 0%;
+    }
+
+    #container-da-esquerda{
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    #container-da-esquerda h2{
+        font-size: 3rem;
+    }
+
+    #exclusivo,
+    #data{
+        font-size: 1.4rem;
+    }
+
+    #descricao{
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+
+    #imagens-palestrantes{
+        flex-direction: column;
+    }
+
+    #container-da-esquerda h4{
+        font-size: 1.8rem;
+    }
+
+    .card-dos-palestrantes{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .card-dos-palestrantes img{
+        width: 180px;
+    }
+
+    .card-dos-palestrantes .nome-palestrante{
+        font-size: 1.8rem;
+    }
+
+    .card-dos-palestrantes .profissao-palestrante{
+        font-size: 1.2rem;
+    }
+
+    #container-da-direita{
+        margin-right: 0;
+    }
+
+    #formulario-de-registro,
+    #nome-container{
+        gap: 1rem;
+    }
+
+    #interior-do-formulario{
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    #nome-do-container{
+        display: flex;
+        gap: 0.5rem;
+    }             
+}
